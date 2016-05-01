@@ -1,0 +1,36 @@
+{
+  "name": "Sarin Viewer",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "This extension show Atoms, Core and Base Versions.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "Sarin Viewer",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      /*"js": [
+        "js/jquery/jquery-1.12.3.min.js",
+        "src/inject/inject.js"
+      ],*/
+      "css": ["src/inject/inject.css"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "webRequest",
+    "<all_urls>"
+  ]
+}

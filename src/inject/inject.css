@@ -1,0 +1,21 @@
+#mainPopup {
+    padding: 10px;
+    height: 200px;
+    width: 500px;
+    font-family: Helvetica, Ubuntu, Arial, sans-serif;
+}
+h1 {
+    font-size: 2em;
+}
+.title {
+    float: left;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding-top: 10px;
+}
+.components{
+    float: left;
+    top: 0px;
+    left: 0px;
+}
